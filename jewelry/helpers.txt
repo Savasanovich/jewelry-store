@@ -1,0 +1,25 @@
+---- postgresqldan foydalanilyapti ----
+
+#### DATABASE setting
+-----  CREATE USER "nexus_user" WITH PASSWORD 'nexus_root';
+-----  CREATE DATABASE "nexus_db" OWNER 'nexus_user';
+#### 2 variant
+-----  CREATE USER "n_user" WITH PASSWORD 'nroot';
+-----   CREATE DATABASE "n_db" OWNER 'n_user';
+#### Create user
+---- python manage.py createsuperuser
+
+   username --- admin
+   email   ---  admin@nexus.uz
+   password --- 123456
+#  2 variant
+   username --- Shohjahon
+   email---  Shohjahon@gmail.uz
+   password --- 18092006
+
+####  How to use dumpdata and loaddata
+------   python manage.py dumpdata app_name > app_name/fixtures/db.json
+------  python manage.py loaddata db.json
+
+ CREATE USER "jewelry_user" WITH PASSWORD 'root';
+postgres-# CREATE DATABASE "jewelry_db" OWNER 'jewelry_user';
